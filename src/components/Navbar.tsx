@@ -51,7 +51,7 @@ const Navbar = () => {
           >
             {/* Logo image - replace the src with your actual logo path */}
             <img
-              src="\src\components/epes-logo.png" 
+              src="\src\components/epes logo.jpeg" 
               alt="EPES Logo" 
               className="h-10 w-auto" 
             />
