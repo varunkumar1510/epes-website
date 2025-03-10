@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { MenuIcon, X } from 'lucide-react';
+const googleDriveLogoUrl = "https://drive.google.com/uc?export=view&id=1DADR9BxaYcwPgZHsuvw0NnqiIDhDFL12";
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -51,7 +52,7 @@ const Navbar = () => {
           >
             {/* Logo image - replace the src with your actual logo path */}
             <img
-              src="\src\components/epes logo.jpeg" 
+              src={googleDriveLogoUrl}
               alt="EPES Logo" 
               className="h-10 w-auto" 
             />
