@@ -1,0 +1,106 @@
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* Import SF Pro Display font */
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11.2%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11.2%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 220 14% 96%;
+    --accent-foreground: 222 47% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border scroll-smooth;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-md;
+  }
+  
+  .glass-dark {
+    @apply bg-foreground/5 backdrop-blur-md border border-foreground/10 shadow-md;
+  }
+  
+  .container-section {
+    @apply container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-spacing {
+    @apply py-20 md:py-28;
+  }
+  
+  .heading-xl {
+    @apply font-display font-bold text-4xl sm:text-5xl md:text-6xl leading-tight tracking-tight;
+  }
+  
+  .heading-lg {
+    @apply font-display font-bold text-3xl sm:text-4xl leading-tight;
+  }
+  
+  .heading-md {
+    @apply font-display font-bold text-2xl sm:text-3xl leading-tight;
+  }
+  
+  .heading-sm {
+    @apply font-display font-bold text-xl sm:text-2xl leading-tight;
+  }
+  
+  .subtitle {
+    @apply text-muted-foreground text-lg md:text-xl max-w-3xl leading-relaxed;
+  }
+  
+  .section-title {
+    @apply inline-block mb-2 font-medium text-primary text-sm tracking-wider uppercase;
+  }
+  
+  .transition-standard {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background;
+  }
+}
