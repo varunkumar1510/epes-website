@@ -53,7 +53,6 @@ const Navbar = () => {
             {/* Logo image - replace the src with your actual logo path */}
             <img
               src={googleDriveLogoUrl}
-              alt="EPES Logo" 
               className="h-10 w-auto" 
             />
             
