@@ -49,9 +49,9 @@ const Navbar = () => {
               scrollToSection('#home');
             }}
           >
-            {/* Logo image - replace the src with your actual logo path */}
+
             <img
-              src={"epes-logo.png"}
+              src={"epes-logo.jpeg"}
               className="h-10 w-auto" 
             />
             
