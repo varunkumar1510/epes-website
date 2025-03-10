@@ -27,7 +27,6 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
-          <Footer />
           <ScrollToTop />
         </div>
       </HashRouter>
