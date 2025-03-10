@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { MenuIcon, X } from 'lucide-react';
-const logoPath = "/epes-logo.png";
+const logoPath = "/epes-logo.jpeg";
 
 const navLinks = [
   { name: 'Home', href: '#home' },
