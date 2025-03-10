@@ -50,9 +50,7 @@ const Navbar = () => {
               scrollToSection('#home');
             }}
           >
-
-            <img src={logoPath} alt="EPES Logo" className="h-10 w-auto" />
-            
+      
             {/* Company Name */}
             <span className={cn(
               "transition-standard",
