@@ -51,7 +51,7 @@ const Navbar = () => {
           >
 
             <img
-              src="public/epes-logo.png"
+              src="/epes-logo.png"
               className="h-10 w-auto" 
             />
             
