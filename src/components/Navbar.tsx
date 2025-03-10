@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { MenuIcon, X } from 'lucide-react';
-import epesLogo from "@/assets/epes-logo.png";
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -52,7 +51,7 @@ const Navbar = () => {
           >
             {/* Logo image - replace the src with your actual logo path */}
             <img
-              src="\public\epes-logo.png" 
+              src="\src\components/epes-logo.png" 
               alt="EPES Logo" 
               className="h-10 w-auto" 
             />
