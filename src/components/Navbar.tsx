@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { MenuIcon, X } from 'lucide-react';
+import epesLogo from "@/assets/epes-logo.jpeg";
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -51,8 +52,7 @@ const Navbar = () => {
           >
 
             <img
-              src={"epes-logo.jpeg"}
-              className="h-10 w-auto" 
+              src={epesLogo}
             />
             
             {/* Company Name */}
